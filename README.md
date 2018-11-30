@@ -1,15 +1,10 @@
 <p align="center">
     <h1 align="center">Home24 API , using Yii2</h1>
-    <br>
 </p>
 
 Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 rapidly creating small projects.
 
-
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
 
 DIRECTORY STRUCTURE
 -------------------
@@ -83,4 +78,19 @@ return [
 - Yii won't create the database for you, this has to be done manually before you can access it.
 - Check and edit the other files in the `config/` directory to customize your application as required.
 - Refer to the README in the `tests` directory for information specific to basic application tests.
+
+
+USAGE
+-------------
+Please first navigate to `http://localhost/home24api/web/` and click on SignUp link on top menu and register a new user.
+
+Use your favorite REST API CLIENT to test the following endpoints:
+
+1- Basic CRUD on : http://localhost/home24api/web/entities  
+2- Send POST request to http://localhost/home24api/web/token with `email` and `password` , to get `token`.
+3- Send `token` in GET request to http://localhost/home24api/web/account?token=xxxx  to see relevant account information.
+
+<h3>Please send your API request body in JSON format.</h3>
+
+
 
